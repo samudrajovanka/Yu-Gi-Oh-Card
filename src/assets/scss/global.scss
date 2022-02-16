@@ -1,0 +1,42 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, button {
+  font-family: 'Roboto Mono', monospace;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+
+  @media (min-width: $breakpoint-small) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 0 80px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0 100px;
+  }
+}
+
+button {
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+$spaceamounts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+$sides: ('', 'x', 'y', 't', 'r', 'b', 'l');
+
+// create margin
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{$side}-#{$space} {
+      @if $side == '' {
+        margin: #{$size-space * $space};
+      } @else if $side == 'x' {
+        margin-top: #{$size-space * $space};
+        margin-bottom: #{$size-space * $space};
+      } @else if $side == 'y' {
+        margin-left: #{$size-space * $space};
+        margin-right: #{$size-space * $space};
+      } @else if $side == 't' {
+        margin-top: #{$size-space * $space};
+      } @else if $side == 'r' {
+        margin-right: #{$size-space * $space};
+      } @else if $side == 'b' {
+        margin-bottom: #{$size-space * $space};
+      } @else if $side == 'l' {
+        margin-left: #{$size-space * $space};
+      }
+    }
+  }
+}
+
+// create padding
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .p#{$side}-#{$space} {
+      @if $side == '' {
+        padding: #{$size-space * $space};
+      } @else if $side == 'x' {
+        padding-top: #{$size-space * $space};
+        padding-bottom: #{$size-space * $space};
+      } @else if $side == 'y' {
+        padding-left: #{$size-space * $space};
+        padding-right: #{$size-space * $space};
+      } @else if $side == 't' {
+        padding-top: #{$size-space * $space};
+      } @else if $side == 'r' {
+        padding-right: #{$size-space * $space};
+      } @else if $side == 'b' {
+        padding-bottom: #{$size-space * $space};
+      } @else if $side == 'l' {
+        padding-left: #{$size-space * $space};
+      }
+    }
+  }
+}

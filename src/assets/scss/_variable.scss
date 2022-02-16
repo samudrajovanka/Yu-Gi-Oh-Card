@@ -1,0 +1,28 @@
+// colors
+$white:               #FFFFFF;
+$black:               #000000;
+$gray:                #dbdbdb;
+$blue:                #0059ff;
+$dark-blue:           #024fdd;
+$red:                 #fc2014;
+
+$primary-color:         $blue;
+$primary-dark-color:    $dark-blue;
+$secondary-color:       $red;
+
+// space
+$size-space:            4px;
+$gap:                   20px;
+$z-index-navbar:        9999;
+
+// border radius
+$border-radius-card:    5px;
+$border-radius-btn:     3px;
+
+// font
+$text-small:            12px;
+
+// breakpoints
+$breakpoint-desktop:   1024px;
+$breakpoint-tablet:     768px;
+$breakpoint-small:      480px;
