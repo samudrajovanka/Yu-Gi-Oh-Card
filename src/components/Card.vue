@@ -1,5 +1,5 @@
 <template>
-  <div href="/card/123" class="card p-3">
+  <div class="card p-3">
     <header class="card__header">
       <img :src="data.card_images[0].image_url" :alt="data.name" class="card__img">
       <div class="card__level" v-if="isMonster">
